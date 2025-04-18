@@ -23,14 +23,14 @@ steps:
       - "--image"
       - "gcr.io/$PROJECT_ID/blanche-asociados-website:$COMMIT_SHA"
       - "--region"
-      - "us-central1"
+      - "southamerica-west1"
       - "--platform"
       - "managed"
       - "--allow-unauthenticated"
 
 options:
   logging: CLOUD_LOGGING_ONLY
-  workerPool: projects/$PROJECT_ID/locations/us-central1/workerPools/default
+  workerPool: projects/$PROJECT_ID/locations/southamerica-west1/workerPools/default
 
 images:
   - "gcr.io/$PROJECT_ID/blanche-asociados-website:$COMMIT_SHA"
