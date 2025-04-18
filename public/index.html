@@ -5,21 +5,377 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanche y Asociados</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
-  <header>
-    <h1>Blanche y Asociados</h1>
-  </header>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <nav class="bg-[#1a2451] text-[#c59a4a] py-4">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <img src="images/logo.png" alt="Blanche y Asociados" class="h-10">
+        <div class="space-x-6">
+          <a href="#team" class="hover:text-white transition-colors">Equipo</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
   <main>
-    <section>
-      <h2>Bienvenidos</h2>
-      <p>Contenido de la página principal.</p>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br bg-gray-50 py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2 text-left space-y-6">
+            <h1 class="text-5xl font-bold text-[#1a2451] leading-tight">
+              Abogadas de<br />
+              <span class="text-[#c59a4a]">Derecho de Familia</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
+              Especialistas en derecho de familia, comprometidas con la excelencia y la atención personalizada para
+              proteger lo que más importa: tu familia.
+            </p>
+            <div class="pt-4">
+              <a href="#contact"
+                class="inline-block px-8 py-4 bg-[#1a2451] text-white rounded-lg hover:bg-[#2a3461] transition-colors duration-300 shadow-lg">
+                Contáctanos
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-[#c59a4a] opacity-10 rounded-full blur-2xl"></div>
+            <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-[#1a2451] opacity-10 rounded-full blur-2xl"></div>
+            <img src="images/main-image.png" alt="Blanche y Asociados"
+              class="w-full h-auto rounded-2xl shadow-2xl relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Áreas de Práctica</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">Materias Relativas a los Cónyuges</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Cese de convivencia</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Alimentos</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Liquidación del régimen
+                  patrimonial</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">Materias Relativas a los Hijos</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Patria potestad</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Cuidado personal</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Relación directa y regular</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Pensión de alimentos</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Autorización de salida del país</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">Divorcio y Separación</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Divorcio por mutuo acuerdo</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Divorcio unilateral</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Divorcio culposo</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Separación judicial</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Compensación económica</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">Pensiones y Cuidado Personal</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Pensiones de alimentos (rebajas,
+                  aumentos, cese, cumplimiento)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Cuidado personal (tuición)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Relación directa y regular (Derecho de
+                  visitas)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">Protección y Filiación</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Acciones de Filiación (Paternidad o
+                  maternidad)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Violencia intrafamiliar VIF</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Medidas de protección</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Patria potestad</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Declaración de bien familiar</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">Asesoría en Juicios Civiles</h3>
+            <p class="text-gray-700 mb-4">Prestamos asesoría en juicios civiles voluntarios y contenciosos, que tengan
+              relación con el derecho de familia, tales como:</p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Nombramiento de árbitros</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Posesión efectiva</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Interdicción</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Interpretación de testamento</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-[#c59a4a] mr-3">•</span>
+                <span class="hover:text-[#1a2451] transition-colors duration-200">Cambio de nombres</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-12 bg-white rounded-xl">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Nuestros Valores</h2>
+        <div class="grid md:grid-cols-3 gap-12 rounded-lg">
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-[#1a2451] bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-[#1a2451]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-4">Compromiso</h3>
+            <p class="text-gray-600">Dedicación total a cada caso, garantizando la mejor representación legal.
+              Entendemos las necesidades específicas de cada cliente y protegemos sus intereses y derechos en todo
+              momento.</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-[#1a2451] bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-[#1a2451]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-4">Trabajo en Equipo</h3>
+            <p class="text-gray-600">Colaboramos entre todas las abogadas y mantenemos comunicación constante con
+              nuestros clientes para brindar soluciones integrales y personalizadas a cada caso.</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-[#1a2451] bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-[#1a2451]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#1a2451] mb-4">Pasión</h3>
+            <p class="text-gray-600">Amor por la justicia y el derecho de familia, con especial dedicación a generar
+              resultados positivos para los niños y víctimas involucrados en cada caso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Nuestro Equipo</h2>
+        <div class="max-w-3xl mx-auto text-gray-600 space-y-4 mb-8">
+          <p>Somos un grupo de abogadas, especializadas en derecho de familia, que buscamos prestar servicios
+            personalizados a nuestros clientes, de manera de asegurar una fluida y cercana comunicación entre nuestro
+            estudio y el cliente, velando por las necesidades de los niños y adolescentes de las familias en conflicto.
+          </p>
+          <p>Trabajamos en equipo, aportando nuestras distintas experiencias, edades y miradas en la interpretación del
+            conflicto, contando con un análisis interdisciplinario con la ayuda de profesionales del área de la
+            siquiatría y psicología que asesoran a nuestros clientes en los casos en que se requiere tomar resoluciones
+            conjuntas. Nos apoyamos en abogados externos especialistas en materias penales y tributarias, prestando un
+            servicio íntegro, de excelencia y calidad.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="images/ghislaine.jpg" alt="Ghislain Blanche"
+                  class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-2xl font-semibold text-[#1a2451] mb-6">Ghislaine Blanche</h3>
+                <p class="text-gray-600">Abogada de la Universidad de Chile con magíster en Derecho de infancia,
+                  Adolescencia y Familia, especializada en derecho de familia con 30+
+                  años de experiencia</p>
+              </div>
+              <div class="flip-card-back bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">Ghislaine Blanche</h3>
+                <div class="text-gray-600 text-left space-y-3">
+                  <p class="text-sm">Licenciada en Ciencias Jurídicas y Sociales, Facultad de Derecho de la Universidad
+                    de Chile (1983). Título de Abogado (1986). Magíster en Derecho de infancia, Adolescencia y Familia
+                    Universidad Diego Portales (2007). Miembro del Colegio de Abogados y de la Asociación de Abogados de
+                    Familia (A.A.F.) en donde es parte del Comité de Ética. Abogado de la Corporación INFAJUS.</p>
+                  <p class="text-sm">Socia fundadora del Estudio Jurídico, con más de 32 años de experiencia en derecho
+                    de familia. Busca alcanzar soluciones a los problemas familiares con especial interés en el respeto
+                    de los derechos de los niños involucrados.</p>
+                  <p class="text-sm">Trabaja en forma interdisciplinaria con profesionales del área de la psiquiatría y
+                    de la psicología que asesoran en los casos que se requiere tomar soluciones conjuntas.</p>
+                  <p class="text-sm">Idiomas: Español e Inglés.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="images/ghislaine.jpg" alt="María Isabel Rojas"
+                  class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-2xl font-semibold text-[#1a2451] mb-6">María Isabel Rojas</h3>
+                <p class="text-gray-600">Abogada especializada en derecho de familia</p>
+              </div>
+              <div class="flip-card-back bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-[#1a2451] mb-3">María Isabel Rojas</h3>
+                <div class="text-gray-600 text-left space-y-3">
+                  <p class="text-sm">Licenciada en Ciencias Jurídicas y Sociales, Facultad de Derecho de la Universidad
+                    de Chile (1983). Título de Abogado (1986). Magíster en Derecho de infancia, Adolescencia y Familia
+                    Universidad Diego Portales (2007). Miembro del Colegio de Abogados y de la Asociación de Abogados de
+                    Familia (A.A.F.) en donde es parte del Comité de Ética. Abogado de la Corporación INFAJUS.</p>
+                  <p class="text-sm">Socia fundadora del Estudio Jurídico, con más de 32 años de experiencia en derecho
+                    de familia. Busca alcanzar soluciones a los problemas familiares con especial interés en el respeto
+                    de los derechos de los niños involucrados.</p>
+                  <p class="text-sm">Trabaja en forma interdisciplinaria con profesionales del área de la psiquiatría y
+                    de la psicología que asesoran en los casos que se requiere tomar soluciones conjuntas.</p>
+                  <p class="text-sm">Idiomas: Español e Inglés.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2024 Blanche y Asociados</p>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4 mb-12">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Contáctanos</h2>
+      <div class="max-w-2xl mx-auto">
+        <form class="space-y-4 mb-8">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1a2451] focus:border-[#1a2451]">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1a2451] focus:border-[#1a2451]">
+          </div>
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
+            <input type="text" id="subject" name="subject" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1a2451] focus:border-[#1a2451]">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1a2451] focus:border-[#1a2451]"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit"
+              class="px-8 py-3 bg-[#1a2451] text-white rounded-lg hover:bg-[#2a3461] transition-colors duration-300 shadow-lg">
+              Enviar Mensaje
+            </button>
+          </div>
+        </form>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="text-center">
+            <h3 class="text-lg font-semibold mb-2 text-[#1a2451]">Dirección</h3>
+            <p class="text-gray-600">Cerro el Plomo, 5931 - Oficina 1007</p>
+            <p class="text-gray-600">Las Condes, Santiago, Chile</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-lg font-semibold mb-2 text-[#1a2451]">Contacto</h3>
+            <p class="text-gray-600">+56 57 276 8692</p>
+            <p class="text-gray-600">contacto@blancheyasociados.legal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#1a2451] text-[#c59a4a] py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Blanche y Asociados. Todos los derechos reservados.</p>
+    </div>
   </footer>
 </body>
 
