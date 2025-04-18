@@ -30,6 +30,7 @@ steps:
 
 options:
   logging: CLOUD_LOGGING_ONLY
+  workerPool: projects/$PROJECT_ID/locations/us-central1/workerPools/default
 
 images:
   - "gcr.io/$PROJECT_ID/blanche-asociados-website:$COMMIT_SHA"
